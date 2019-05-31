@@ -87,7 +87,7 @@ a {
 .project-header {
     border-top: 1px solid black;
     padding-top: 67px;
-    height: 100px;
+    height: 70px;
 }
 
 hr {
@@ -95,7 +95,32 @@ hr {
     margin-top: 4px;
 }
 
-/* .header {
+projects {
     display: flex;
     justify-content: center;
-} */
+}
+
+.project-grid {
+    display: flex;
+    justify-content: flex-start;
+    /* width: 900px; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 2em 1em 1em;
+}
+
+.project-grid-item {
+    margin-bottom: 3.5em;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
