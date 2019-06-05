@@ -17,7 +17,7 @@ body {
 
 .section {
     width: 100%;
-    height: 255px;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -29,11 +29,6 @@ ul li {
 a {
     text-decoration: none;
     color: #000000; 
-}
-
-hr {
-    border-top: 2px solid #FE6056;
-    margin-top: 4px;
 }
 
 .menu {
@@ -61,11 +56,15 @@ hr {
 .header {
     position: relative;
     top: -35px;
-    /* height: 75px; */
+    height: 75px;
+}
+
+.header-name {
+    position: absolute;
 }
 
 .header-title {
-    position: absolute;
+    position: relative;
     top: 45px;
 }
 
@@ -86,18 +85,24 @@ hr {
 }
 
 .about-header {
-    height: 15px;
+    padding-top: 67px;
+    height: 106px;
+}
+
+.project-header {
+    padding-top: 67px;
+    height: 70px;
 }
 
 /* compass animation section START*/
 
-.compass-container {
-    display: flex;
+.compass {
+    height: 120px;
     width: 100%;
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    height: 200px;
-    padding-top: 30px;
+    /* justify-content: center; */
+    flex-direction: column;
 }
 
 #compassImage {
@@ -124,8 +129,8 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	position: relative;
-	left: 1px;
-    top: -76px;
+	left: 56px;
+    top: -22px;
     height: 20px;
 }
 
@@ -134,8 +139,8 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	position: relative;
-	left: 35px;
-    top: -61px;
+	left: 84px;
+    top: 17px;
     height: 20px;
 }
 
@@ -144,8 +149,8 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	position: relative;
-	left: 1px;
-    top: -46px;
+	left: 41px;
+    top: 55px;
     height: 20px;
 }
 
@@ -154,18 +159,16 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	position: relative;
-	left: -35px;
-    top: -101px;
+	left: -7px;
+    top: 17px;
     height: 20px; 
 }
 
 /* compass animation END */
 
-
-
-.project-header {
-    padding-top: 67px;
-    height: 70px;
+hr {
+    border-top: 2px solid #FE6056;
+    margin-top: 4px;
 }
 
 .projects {
@@ -197,18 +200,15 @@ hr {
     margin-bottom: 0.5em;
 }
 
-.contact-header {
-    height: 2em;
-}
-
-.contact-icons {
+/* .contact-icons {
     display: flex;
     justify-content: space-around;
     width: 250px;
-}
+    top: 170px;
+    height: 50px;
+    padding: 2em;
+} */
 
-.contact-icons-container {
+.contact-icons {
     display: flex;
-    width: 100%;
-    justify-content: center;
 }
