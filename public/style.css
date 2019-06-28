@@ -1,0 +1,321 @@
+/* #region Element styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    color: #000;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+hr {
+    border-top: 2px solid #FE6056;
+    margin-top: 4px;
+}
+
+footer {
+    width: 100%;
+    padding: 24px 0px 8px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 89%;
+}
+/* #endregion */
+
+/* class and id section START */
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-header {
+    height: 15px;
+    padding-top: 67px;
+    position: relative;
+    top: -35px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* #region Landing Page styles */
+.landingPage-container {
+    flex-direction: column;
+    justify-content: stretch;
+    height: 736px;
+}
+
+.navbar-div {
+    margin: 47px 0px;
+}
+
+.navbar-list ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-div {
+    height: 521px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tagline-p {
+    margin: 300px 40px;
+}
+/* #endregion*/
+
+/* #region About Me styles */
+.aboutMe-container,
+.projects-container {
+    flex-direction: column;
+    align-items: center;
+}   
+.myStory-div,
+.projects-content-div {
+    padding: 2em 1em 1em;
+}
+
+.skills-div {
+    margin-bottom: 9px;
+}
+
+.skills-div h3 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.skills-list,
+.contact-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* #endregion */
+
+/* #region Compass Animation styles */
+.compass-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 95px;
+    padding-top: 30px;
+}
+
+#compassImage {
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    40% {
+        transform: rotate(90deg)
+    }
+    60% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(90deg)
+    }
+}
+
+.north {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	position: relative;
+	left: 0px;
+    top: -75px;
+    height: 20px;
+}
+
+.east {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	position: relative;
+	left: 32px;
+    top: -58px;
+    height: 20px;
+}
+
+.south {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	position: relative;
+	left: 0px;
+    top: -42px;
+    height: 20px;
+}
+
+.west {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	position: relative;
+	left: -34px;
+    top: -93px;
+    height: 20px; 
+}
+
+/* #endregion */
+
+/* #region Projects styles */
+.project-laPathways-div {
+    margin-bottom: 3em;
+    padding-top: 30px;
+}
+
+.project-image-div img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.project-name-p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+/* #endregion */
+
+/* #region Contact styles */
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.contact-div {
+    width: 250px;
+    padding: 10px 0px 15px;
+}
+
+.contact-list {
+    padding-top: 30px;
+}
+/* #endregion */
+
+@media only screen and (min-width: 750px) {
+    html, body, .section {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+        -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+        -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+        -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+        color: #fff;
+        overflow: hidden; 
+        color: #000000;
+    }
+
+    .section {
+        position: absolute;
+    }
+
+    #aboutMe {
+        left: 0;
+    }
+
+    #projects,
+    #contact {
+        left: 200%;
+    }
+
+    #t2:target #projects,
+    #t3:target #contact {
+      transform: translateX(-190%);
+      -webkit-transform: translateX(-190%);
+      -moz-transform: translateX(-190%);
+      -o-transform: translateX(-190%);
+      transition-delay: .4s !important;
+    }
+
+    #t2:target #aboutMe {
+        -webkit-filter: blur(3px);
+    }
+
+    .navbar-div {
+        z-index: 1;
+        position: fixed;
+        height: auto;
+        top: 200px;
+        width: 200px;
+    }
+
+    .navbar-list ul {
+        padding-left: 16px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logo-div {
+        position: fixed;
+        top: 30px;
+        bottom: 0;
+        width: 200px;
+    }
+
+    .tagline-p {
+        display: none;
+    }
+
+    .page .icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 10%;
+        left: 0;
+        width: 270px;
+        height: 170px;
+        margin: auto;
+        text-align: center;
+        line-height: 1.3;
+        transform: translateX(360%);
+        -webkit-transform: translateX(360%);
+        -moz-transform: translateX(360%);
+        -o-transform: translateX(360%);
+        transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+        -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+        -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+        -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+        border: 1px solid black;
+      }
+
+    .aboutMe-container {
+        width: 75%;
+        transform: translate(25%) !important;
+        height: auto;
+    }
+
+}
