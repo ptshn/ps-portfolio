@@ -11,27 +11,41 @@
 
 <body>
    <div class='app-container'>
-       <div class id='t2'>
-           <div class id='t3'>
+       <div class id='my-projects'>
+           <div class id='my-contact'>
 
                <!-- #region Landing Page Container -->
                <div class='section landingPage-container'>
                    <!-- Navigation -->
-                   <div class='navbar-div'>
-                       <div class='navbar-list'>
-                           <ul>
-                               <a href='#aboutMe'>
-                                   <li>About Me</li>
-                               </a>
-                               <a href='#t2'>
-                                   <li>My Projects</li>
-                               </a>
-                               <a href='#t3'>
-                                   <li>Contact</li>
-                               </a>
-                           </ul>
-                       </div>
-                   </div>
+                <div class='navbar-div'>
+                    <div class='navbar-list'>
+                        <!-- mobile navigation links (display toggles on/off based on resolution) -->
+                        <ul id='mobileNav'>
+                            <a href='#aboutMe'>
+                                <li>About Me</li>
+                            </a>
+                            <a href='#projects'>
+                                <li>My Projects</li>
+                            </a>
+                            <a href='#contact'>
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                        
+                        <!-- desktop navigation links (display toggles on/off based on resolution) -->
+                        <ul id='desktopNav'>
+                            <a href='#aboutMe'>
+                                <li>About Me</li>
+                            </a>
+                            <a href='#my-projects'>
+                                <li>My Projects</li>
+                            </a>
+                            <a href='#my-contact'>
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
                    <!-- Logo & Tagline -->
                    <div class='logo-div'>
                        <div><img class='icon' src='images/mtn.svg' /></div>

@@ -74,9 +74,13 @@
     /* border: 1px solid red; */
  }
  
- .navbar-list ul {
+ .navbar-list #mobileNav {
     display: flex;
     justify-content: space-around;
+ }
+
+ .navbar-list #desktopNav {
+    display: none;
  }
  
  .logo-div {
@@ -254,10 +258,10 @@
         color: #000000;
     }
 
-    /* .app-container {
-        max-width: 1100px;
+    .app-container {
+        max-width: 1500px;
         margin: 0 auto;
-    } */
+    }
 
     footer {
         position: fixed;
@@ -289,8 +293,8 @@
     #projects,
     #contact { background: #fafafa; }
  
-    #t2:target #projects,
-    #t3:target #contact {
+    #my-projects:target #projects,
+    #my-contact:target #contact {
       transform: translateX(-190%);
       -webkit-transform: translateX(-190%);
       -moz-transform: translateX(-190%);
@@ -298,7 +302,8 @@
       transition-delay: .4s !important;
     }
  
-    #t2:target #aboutMe {
+    #my-projects:target #aboutMe,
+    #my-contact:target #aboutMe {
         -webkit-filter: blur(3px);
     }
  
@@ -310,8 +315,13 @@
         width: 200px;
         text-align: center;
     }
+
+    .navbar-list #mobileNav {
+        display: none;
+    }
  
-    .navbar-list ul {
+    .navbar-list #desktopNav {
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -376,8 +386,8 @@
         top: 28px;
     }
  
-    #t2:target .section#projects .content-div,
-    #t3:target .section#contact .content-div {
+    #my-projects:target .section#projects .content-div,
+    #my-contact:target .section#contact .content-div {
       transform: translateX(0) !important;
       -webkit-transform: translateX(0) !important;
       -moz-transform: translateX(0) !important;
