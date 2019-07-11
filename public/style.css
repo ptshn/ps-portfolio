@@ -205,6 +205,14 @@
     margin: 9px auto;
     width: 0%;
  }
+
+ .myStory-span {
+    font-family: monospace; 
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0 4px;
+    background:rgba(12, 242, 143, 0.2)
+ }
  
  /* #endregion */
  
@@ -244,7 +252,7 @@
     padding-top: 30px;
  }
 
- .contact p {
+ .contact-p {
      text-align: center;
  }
  /* #endregion */
@@ -264,7 +272,7 @@
     }
 
     .app-container {
-        max-width: 1500px;
+        max-width: 1440px;
         margin: 0 auto;
     }
 
@@ -351,10 +359,6 @@
         padding-top: 1em; 
     }
  
-    .skills-div {
-        margin-top: 50px;
-    }
- 
     .skills-list {
         justify-content: center;
     }
@@ -389,6 +393,7 @@
         flex-direction: column;
         align-items: center;
         top: 28px;
+        right: 104px;
     }
  
     #my-projects:target .section#projects .content-div,
@@ -462,3 +467,10 @@
         font-size: 2.5rem;
     }
  }
+
+@media only screen and (min-width: 1440px) {
+    .projects-div,
+    .contact-div {
+        right: 21%;
+    }
+}
