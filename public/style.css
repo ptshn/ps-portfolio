@@ -196,6 +196,7 @@
  .myStory-div p {
     font-family: monospace;
     font-size: 2rem;
+    text-align: center;
  }
  
  .arrow-list {
@@ -241,6 +242,10 @@
  
  .contact-list {
     padding-top: 30px;
+ }
+
+ .contact p {
+     text-align: center;
  }
  /* #endregion */
  
